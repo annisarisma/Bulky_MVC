@@ -32,7 +32,7 @@ namespace BulkyWeb.Controllers
                 ModelState.AddModelError("Name", "The Name cannot be exactly match with the Display Order");
             }
 
-            if (ModelState.IsValid)
+			if (ModelState.IsValid)
             {
 				_db.Categories.Add(obj);
 				_db.SaveChanges();
